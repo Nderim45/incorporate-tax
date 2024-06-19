@@ -35,7 +35,7 @@ const Navbar = () => {
 
   return (
     <div className={clsx("nav-bar", isSticky ? "nav-bar_sticky" : "")}>
-      <Link className="logo-container" to="/Home">
+      <Link className="logo-container" to="/">
         <div className="logo" />
         <h6>IncorporateTax</h6>
       </Link>
