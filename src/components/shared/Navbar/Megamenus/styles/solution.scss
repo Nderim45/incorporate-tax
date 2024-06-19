@@ -1,0 +1,112 @@
+.solutions {
+  display: none;
+  position: absolute;
+  justify-content: space-between;
+  width: 1000px;
+  background: #fff;
+  top: 55px;
+  left: 20%;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+  .left-div {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 80%;
+    .solutions-links {
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+      width: 30%;
+      margin: 0 1.2%;
+      .image-div {
+        position: relative;
+        .inner-div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 60px;
+          height: 60px;
+          background: #f6f2ff;
+          margin-right: 10px;
+          border-radius: 50%;
+          z-index: 3;
+          position: relative;
+          svg {
+            font-size: 23px;
+            color: #4B44F9;
+            background: #f6f2ff;
+          }
+        }
+      }
+      &:hover {
+        .image-div {
+          position: relative;
+          .circle1 {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            left: -7px;
+            background: #d5bfff;
+            border-radius: 50%;
+            bottom: 0;
+            z-index: 1;
+          }
+          .circle2 {
+            width: 60px;
+            height: 60px;
+            background: #d5bfff;
+            position: absolute;
+            z-index: 2;
+            top: -7px;
+            left: -7px;
+            border-radius: 50%;
+          }
+          .inner-div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background: #3057e0;
+            margin-right: 10px;
+            border-radius: 50%;
+            z-index: 3;
+            position: relative;
+            svg {
+              font-size: 23px;
+              color: #fff;
+              background: #3057e0;
+            }
+        }
+      }
+    }
+  }
+    .block {
+      width: 90%;
+      h4 {
+        margin: 0;
+        font-size: 14px;
+      }
+      p {
+        font-size: 11px;
+      }
+    }
+  }
+  .right-div {
+    display: flex;
+    flex-direction: column;
+    background: #f6f2ff;
+    border-radius: 0 10px 10px 0;
+    padding: 0 30px;
+    width: 18%;
+    h4 {
+      margin: 20px 0 30px 0;
+      font-size: 14px;
+    }
+    p {
+      margin: 10px 0;
+      font-size: 12px;
+    }
+  }
+}

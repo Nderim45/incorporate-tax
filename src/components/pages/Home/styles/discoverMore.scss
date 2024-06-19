@@ -1,0 +1,159 @@
+.discover-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Muli";
+  margin-bottom: 100px;
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .line {
+      background: #d5bfff;
+      height: 10px;
+      width: 70px;
+      border-radius: 5px;
+    }
+    h6 {
+      font-size: 35px;
+      margin: 20px;
+    }
+  }
+  .cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    .card {
+      width: 23%;
+      margin: 0 2%;
+      border-radius: 25px;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2),
+        0 4px 4px 0 rgba(0, 0, 0, 0.19);
+        position: relative;
+      .image-div {
+        .image {
+          width: 100%;
+        }
+        .float-icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          background: #4b44f9;
+          border-radius: 50%;
+          height: 75px;
+          width: 75px;
+          top: -55px;
+          left: 45px;
+          .icon {
+            height: 22px;
+          }
+        }
+      }
+      .content-div {
+        padding: 40px;
+        padding-top: 0;
+
+        h6 {
+          margin: 0;
+          font-size: 18px;
+        }
+        
+      }
+      a {
+          position: absolute;
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          color: #4b44f9;
+          padding: 0 40px;
+          bottom: 20px;
+          svg {
+            margin-left: 10px;
+          }
+        }
+      &:hover{
+        .image-div{
+          overflow:hidden;
+          border-radius: 20px;
+          .image{
+            transform: scale(1.075);
+            filter: brightness(0.75);
+            transition: 0.3s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+  .button {
+    background: #605afa;
+    display: flex;
+    width: 190px;
+    border-radius: 25px;
+    margin-top: 80px;
+    a {
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      text-decoration: none;
+      padding: 15px 20px;
+      color: white;
+      svg {
+        font-size: 20px;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+@media(max-width:1401px){
+  .discover-more{
+    .text{
+      h6{
+        font-size: 30px;
+      }
+    }
+    .cards{
+      .card{
+        width: 25%;
+      }
+    }
+  }
+}
+@media(max-width:1065px){
+  .discover-more{
+    .cards{
+      .card{
+        width: 30%;
+        .content-div{
+          padding: 25px;
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}
+@media(max-width:900px){
+  .discover-more{
+    .cards{
+      flex-wrap: wrap;
+      .card{
+        width: 70%;
+        margin: 20px 0;
+        .content-div{
+          padding: 0 25px 45px;
+        }
+        a{
+          padding: 0 25px;
+        }
+      }
+    }
+    .button{
+      width: 160px;
+      margin-top: 60px;
+      a{
+        font-size: 13px;
+        padding:10px 10px;
+      }
+    }
+  }
+}

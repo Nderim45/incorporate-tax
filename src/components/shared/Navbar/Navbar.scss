@@ -1,0 +1,160 @@
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    position: fixed;
+    width: 90%;
+    align-items: center;
+    font-family: 'Muli';
+    height:90px;
+    z-index: 1000;
+}
+.nav-bar .logo-container{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    .logo{
+        content: url(../../../assets/Navbar/Logo.png);
+        height: 30px;
+        margin-right: 20px;
+    }
+    h6{
+        font-size: 25px;
+        color: #000;
+    }
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.link{
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    a{
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        text-decoration: none;
+        color: #000;
+    }
+    .navbar-svg{
+        font-size: 15px;
+    }
+    &:hover{
+        .megamenu{
+            display: flex;
+        }
+        .navbr-svg{
+            transform: rotate(-180deg);
+        }
+        .megamenu-arrow{
+            display: flex;
+        }
+}
+}
+.authentication{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a{
+        font-size: 16px;
+        text-decoration: none;
+        color: #fff;
+    }
+    .sign-up{
+        background-color: #3c72ed;
+        border: 0px solid #fff;
+        border-radius: 25px;
+        padding: 10px 20px;
+        margin-left: 20px;
+    }
+}
+.menu-icon{
+    display: none;
+}
+.nav-bar_sticky{
+    background: #fff;
+    box-shadow: rgba(60, 64, 67, 0.25) 0px 1px 3px 0px, rgba(60, 64, 67, 0.125) 0px 2px 6px 2px !important;
+    .authentication{
+        a{
+            color: #000;
+        }
+        .sign-up{
+            color: #fff;
+        }
+    }
+}
+
+// @media(max-width:1401px){
+//     .nav-bar{
+//         height:80px;
+//         padding:0 70px;
+//     }
+//     .nav-bar .logo-container{
+//         .logo{
+//             content: url(../../../assets/Navbar/Logo.png);
+//             height: 20px;
+//             margin-right: 20px;
+//         }
+//         h6{
+//             font-size: 17px;
+//         }
+//     }
+//     .links{
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//     }
+//     .link{
+//         margin: 15px;
+//         display: flex;
+//         align-items: center;
+//         a{
+//             font-size: 11px;
+//             text-decoration: none;
+//             color: #000;
+//         }
+//         svg{
+//             font-size: 15px;
+//         }
+//     }
+//     .authentication{
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//         a{
+//             font-size: 14px;
+//             text-decoration: none;
+//             color: #000;
+//             margin: 0 10px;
+//         }
+//         .sign-up{
+//             background-color: #DECDFF;
+//             border: 1px solid #fff;
+//             border-radius: 25px;
+//             padding: 10px 20px;
+//         }
+//     }
+// }
+
+
+@media(max-width:1260px){
+    .nav-bar{
+        padding: 0 5%;
+        .links, .authentication{
+            display: none;
+        }
+        .menu-icon{
+            display: flex;
+            justify-content: flex-end;
+
+            svg{
+                font-size: 25px;
+            }&:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}

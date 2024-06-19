@@ -37,9 +37,9 @@ function App() {
       >
         <ScrollToTop />
         <Routes>
-          <Route path="/" component={Home} />
-          <Route path="/Login" component={Login} />
-          <Route path="/Signup" component={Signup} />
+          <Route path="/" element={<Home />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/Signup" element={<Signup />} />
         </Routes>
       </IntlProvider>
     </BrowserRouter>

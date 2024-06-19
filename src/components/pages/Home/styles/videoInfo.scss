@@ -1,0 +1,189 @@
+.video-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 5%;
+  height: 100%;
+  padding: 0;
+  .inner-div {
+    width: 35%;
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      height: 100%;
+      .video {
+        content: url("../../../../assets/Home/avel-chuklanov-DUmFLtMeAbQ-unsplash\ \(1\).png");
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+      }
+      .color-image {
+        content: url("../../../../assets/Home/avel-chuklanov-DUmFLtMeAbQ-unsplash.png");
+        position: relative;
+        width: 100%;
+        z-index: 0;
+        left: 10px;
+        top: 10px;
+      }
+      .circle-button {
+        content: url("../../../../assets//Home/Ellipse\ 16.png");
+        position: absolute;
+        z-index: 2;
+      }
+      .play-button {
+        content: url("../../../../assets/Home/play.png");
+        position: absolute;
+        z-index: 3;
+      }
+    }
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 40px;
+    h4 {
+      margin: 0;
+      font-size: 38px;
+    }
+    p {
+      font-size: 16px;
+      text-align: start;
+    }
+    .inline {
+      display: flex;
+      justify-content: space-between;
+      padding-right: 10px;
+      margin: 0;
+      .item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .image {
+          height: 20px;
+          margin-right: 10px;
+        }
+        .image1 {
+          content: url("../../../../assets/Home/chart-stacked.png");
+        }
+        .image2 {
+          content: url("../../../../assets/Home/file-settings-solid-alerted.png");
+        }
+        .image3 {
+          content: url("../../../../assets/Home/timer.png");
+        }
+      }
+    }
+    .button {
+      background: #605afa;
+      display: flex;
+      width: 180px;
+      border-radius: 25px;
+      margin: 25px 0;
+      a {
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        text-decoration: none;
+        padding: 15px 20px;
+        color: white;
+        svg {
+          margin-left: 40px;
+          color: white;
+          align-items: flex-end;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1500px) {
+  .video-info {
+    .inner-div {
+      width: 40%;
+    }
+    .info {
+      h4 {
+        margin: 0;
+        font-size: 30px;
+      }
+      p {
+        font-size: 14px;
+        text-align: start;
+      }
+    }
+  }
+}
+@media (max-width: 1070px) {
+  .video-info {
+    flex-wrap: wrap;
+    flex-flow: wrap-reverse;
+    .inner-div {
+      width: 100%;
+      .wrapper {
+        .video {
+          width: 70%;
+        }
+        .color-image {
+          width: 70%;
+        }
+      }
+    }
+    .info {
+      width: 100%;
+      h4 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+      .last-section {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+@media(max-width:700px){
+  .video-info {
+    .inner-div {
+      .wrapper {
+        .circle-button {
+          content: url("../../../../assets//Home/Ellipse\ 16.png");
+          position: absolute;
+          width: 15%;
+          z-index: 2;
+        }
+        .play-button {
+          content: url("../../../../assets/Home/play.png");
+          position: absolute;
+          width: 2.7%;
+          z-index: 3;
+        }
+      }
+    }
+    .info{
+      .inline {
+        .item {
+          .image {
+            height: 17px;
+            margin-right: 10px;
+          }
+          .image1 {
+            content: url("../../../../assets/Home/chart-stacked.png");
+          }
+          .image2 {
+            content: url("../../../../assets/Home/file-settings-solid-alerted.png");
+          }
+          .image3 {
+            content: url("../../../../assets/Home/timer.png");
+          }
+          p{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
