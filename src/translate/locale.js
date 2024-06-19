@@ -1,0 +1,10 @@
+export const sqAL = "sq-AL";
+export const enUS = "en-US";
+export const frFR = "fr-FR";
+export const itIT = "it-IT";
+export const esES = "es-ES";
+export const jaJP = "ja-JP";
+export const deDE = "de-DE";
+export const ruRU = "ru-RU";
+export const daDA = "da-DA";
+export const hiHI = "hi-HI";
